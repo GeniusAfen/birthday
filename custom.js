@@ -18,6 +18,7 @@ $(function () {
 $(function () {
     for (let k in config.desc) {
         let dom = $("#" + k);
+        console.log(k,config.desc[k])
         if (dom.length > 0 && config.desc[k]) {
             dom.html(config.desc[k]);
         }
